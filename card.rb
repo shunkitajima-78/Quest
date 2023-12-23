@@ -18,7 +18,7 @@ class Card
         # SUITS.product(NUMBERS) { |suit| deck << suit }
         # print deck
     end
-
+    
     #絵札の数値変換
     def convert_number
         case number
@@ -32,5 +32,22 @@ class Card
         end
 
     end
+
+    #マークの文字変換
+    def convert_text
+        case suit
+        when :spade then 'スペード'
+        when :heart then 'ハート'
+        when :diamond then 'ダイヤ'
+        when :club then 'クラブ'
+        end
+    end
+
+    #カード情報の表示
+    def card_info
+        "#{convert_text}の#{number}です。"
+    end
+
+end
 
    
