@@ -1,4 +1,4 @@
-require_relative '../Quest/User'
+require_relative '../blackjack/User'
 
 class Dealer < User
     attr_reader :cards

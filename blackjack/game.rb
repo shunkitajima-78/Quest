@@ -1,6 +1,6 @@
-require_relative '../Quest/card'
-require_relative '../Quest/player'
-require_relative '../Quest/dealer'
+require_relative '../blackjack/card'
+require_relative '../blackjack/player'
+require_relative '../blackjack/dealer'
 
 class Game
     def initialize
